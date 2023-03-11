@@ -6,38 +6,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/about.css">
-        <script src="js/about.js"></script> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@1&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet">
-        </head>
-
-<header>
-     
-    <nav class="navbar">        
+        
+      </head>
+      <header>  
          
-        <ul class="nav-links">
-            <img class="logo" src="img/logo.png" > 
-            
-        <div class="menu">
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img class="logo" src="img/logo.png">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
         
-        <li><a href="/index1.html">Home</a></li>
-        <li><a href="/">Digital Transformation</a></li>
-        <li><a href="/">Innovation Lab</a></li>       
-        <li><a href="/">Project</a></li>
-        <li><a href="/AboutUs.html">About Us</a></li>
-       <li><a href="/">Professional Services</a></li>      
-      
-        </ul>
-        <a href="#" class="button3">Get in Touch</a>
-        <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="nav-links">
+        <a href="index1.html">Home</a>
+        <a href="Project.html">Projects</a>
+        <a href="Innovation Lab.html">Innovation Lab</a>
+        <a href="Professional Services.html">Professional services</a>
+        <a href="Digital transformation.html">Digital transformation</a>
+        <a href="AboutUs.html">About Us</a>
         
-    </nav>
+        <button class="btn" href="Contact.html">Get In Touch</button>
+       
+        </div>
+      </div>
 
 </header>
 
@@ -140,16 +139,28 @@ function openPage(pageName,elmnt,color  ) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  } 
 </script>
 
 
 
    <footer><div class="foot">    
 
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <p><a href="mailto:info@appyyo.com?subject = Feedback&body = Message">info@appyyo.com</a></p></div>
+    <a href="https://www.instagram.com/appy.yo/" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/appy.yo5" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/company/appy-yo/" class="fa fa-linkedin"></a>
+    <p><a href="mailto:info@appyyo.com?subject = Feedback&body = Message">info@appyyo.com</a></p>
     </footer>
   
 </body>

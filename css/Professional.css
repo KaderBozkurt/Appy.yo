@@ -1,0 +1,298 @@
+/* Basic styling */
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: monospace;
+  background-color: #2F303A;
+  color:whitesmoke;
+}
+    
+header{
+  display:inline;
+
+}
+
+.vibe{
+  width: 400px;
+}
+/* LOGO */
+
+.logo{
+  width: 200px; 
+  height: auto;
+  float: left;
+  margin-top: 0%;
+  margin-bottom: 10px;
+    
+}
+
+.content{
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 12em 2em 2em 12em;
+}
+h1{
+  margin: 1em 2em 2em;
+}
+p{
+  font-size: large;
+}
+/*---------------------------button-----------------------------*/
+    .btn, .btn1{
+        width: fit-content;
+        height: fit-content;
+        display:inline-block;
+        padding: 0.3em 2em;
+        margin: 1em 1em 1em 0em;       
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight:300;
+        color:black;
+        background-color: whitesmoke;
+        text-align:center;
+        transition: all 0.5s;       
+        border: none;
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: monospace;
+          }
+       
+      .btn1{
+        display: block; 
+        margin-left: 40%;
+        
+      }  
+        .btn:hover,.btn1:hover{
+        background-color:rgb(145, 142, 142);
+        color:whitesmoke;
+        text-decoration: underline;
+
+        }
+  /*-----------------------reponsive menu----------------------------------*/
+
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #2F303A;
+  position: relative;
+  margin-bottom: 5%;
+  
+}
+
+.nav > .nav-header {
+  display: inline;
+  
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+  
+  
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  
+}
+
+.nav > .nav-links > a{
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  
+}
+
+.nav > .nav-links > a:hover {
+  background-color: whitesmoke;
+  text-decoration: underline;
+  color:black;
+  
+}
+
+.nav > #nav-check {
+  display: none;
+  
+}
+
+@media (max-width:600px) {
+  * {width: 100%;
+    height: auto;
+  margin: 0%;
+padding: 0%;}
+
+.content{
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 9em 1em 0em 0em;
+}
+
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    float: right;
+   
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #2F303A;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color:#2F303A;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 100px;
+   text-align: center;
+    
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .logo{
+    display: inline-block;
+    margin-top: -5%;
+    margin-left: -5%;
+
+  }
+  .nav > .nav-links > a:hover {
+    background-color: whitesmoke;
+    text-decoration: underline;
+    color:black;
+    
+  }
+  .btn{
+    visibility: hidden;
+  }
+  .btn1{
+    width:max-content; 
+   
+        height: fit-content;
+      display: inline-flex;
+      margin-left: 7em ;
+      margin-bottom: 5em;      
+              
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight:300;
+        color:black;
+        background-color: whitesmoke;
+        text-align:center;
+        transition: all 0.5s;       
+        border: none;
+        border-radius: 15px;
+        font-size: 15px;
+       
+
+  }
+  img{
+    margin: 1em 1em 1em;
+  }
+  
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-----------Footer-------------------------*/
+
+footer 
+{	
+	border-top: 1px solid whitesmoke;
+  margin-top: 5%;
+    
+}
+
+footer p a {
+	
+	text-align: left;
+	clear: both;
+	font-family:monospace;
+	color: hsl(0, 0%, 100%);
+	padding-bottom: 0;
+}
+footer p {
+	margin: 1% 1%;
+	line-height: 0.5em;
+	font-size: 1em;
+}
+
+/*8.For Social Media logo*/
+.fa 
+{
+	
+	padding: 20px;
+	font-size: 10px;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	
+    margin-right: 10px;
+	border-radius: 50%;
+	float: right;
+}
+
+.fa:hover 
+{
+	opacity: 0.7;
+}
+  
+.fa-facebook 
+{
+	background: #000000;
+	color: white;
+}
+   
+.fa-linkedin 
+{
+	background: #000000;
+	color: white;
+}
+  
+.fa-instagram 
+{
+	background: #000000;
+	color: white;
+}
